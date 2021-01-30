@@ -1,0 +1,319 @@
+/* Stylesheet for Seasons Website */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+body {
+  margin: 0;
+}
+
+#container {
+  max-width: 100%;
+  margin-top: -10%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+header, nav, footer {
+  padding: 1em;
+  padding-bottom: 2em;
+}
+
+footer{
+  color:rgb(184, 74, 74);
+}
+
+h1, h2, p, nav {
+  font-family: 'Quicksand', sans-serif, 'SansationLight';
+}
+
+h1, h2{
+  text-align: center;
+  font-size: 3em;
+  font-weight: 100;
+}
+
+h2{
+  font-size: 1em;
+  color:rgb(128, 128, 128)
+}
+
+h3{
+  font-family: 'Palatino', 'Helvetiva', sans-serif;
+  font-size: 2em;
+  color:black;
+  text-align: center;
+  font-weight: 100;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 300px;
+  
+}
+
+.button {
+  background-color: rgb(184, 74, 74);
+  border:none;
+  border-radius: 25px;
+  padding: 12px 22px;
+  margin-top: 20px;
+  text-align: center;
+  display:block;
+  font-size: 0.9em;
+  font-family: 'Palatino', 'Helvetiva', sans-serif;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.button:hover{
+  background-color: rgb(255, 129, 150);
+}
+
+.selected {
+  background-color: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5em;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 500ms;
+}
+
+article {
+  padding: 1em;
+  padding-bottom: 0;
+}
+
+article > p {
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a{
+  font-family: 'Quicksand';
+  text-transform: lowercase;
+}
+
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition-property: background-color;
+  transition-duration: 250ms;
+}
+
+a.dark:link, a.dark:visited {
+  color: white;
+}
+
+a.currentpage{
+  color: rgb(172, 39, 39);
+}
+
+.mailicon:hover{
+  filter: grayscale(100%) sepia(100%);
+}
+.mailicon:visited{
+  filter: none;
+}
+
+
+h1 > a:link, h1 > a:visited {
+  text-transform: none;
+}
+
+a:hover {
+  color: rgb(255, 129, 150)
+  
+}
+
+
+
+a.artwork:hover {
+  /*opacity: 0.5;*/
+  background-color: transparent;
+}
+
+a.artwork:active {
+  /*opacity: 1;*/
+  background-color: transparent;
+}
+
+@font-face {
+  font-family: 'SansationLight';
+  src: url('./SansationLight.eot');
+  src: local('SansationLight'), url('./SansationLight.woff') format('woff'), url('./SansationLight.ttf') format('truetype');
+}
+
+
+
+ 
+
+  main{
+    gap:3em;
+  }
+
+  #container{
+    width: auto;
+    padding:10%;
+  }
+ 
+
+  .sidetitle{
+    display: none;
+  }
+
+  nav > a {
+    margin-right: 1em;
+  }
+
+  .circular--landscape {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    
+  }
+  
+  .circular--landscape img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+    
+  }
+
+  .circular--portrait {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+  }
+  
+  .circular--portrait img {
+    width: 100%;
+    height: auto;
+    margin-top: -50px;
+  }
+
+  h1{
+    font-size: 2.2em;
+  }
+
+  .toptitle{
+    display: block;
+  }
+
+
+
+
+
+@media (min-width: 45em) {
+
+  main {
+    grid-template-columns: 1fr 1fr;
+    gap:5em;
+    
+  }
+
+  
+
+  .circular--landscape {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    
+  }
+  
+  .circular--landscape img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+  }
+
+  .circular--portrait {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .circular--portrait img {
+    width: 100%;
+    height: auto;
+    margin-top: -50px;
+  }
+
+  article {
+    padding-top: 0;
+  }
+  nav{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+
+  .panel{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction:row;
+    margin: auto;
+  }
+
+  
+  h1{
+    font-size: 3em;
+  }
+
+  .toptitle{
+    display: none;
+  }
+
+
+  .sidetitle{
+    display: flex;
+  }
+
+
+}
+
+
+
+.toiletpanel{
+  width: 300px;
+  height: 500px;
+  
+  
+}
+
+.playarea{
+  
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction:row;
+  margin: auto;
+}
